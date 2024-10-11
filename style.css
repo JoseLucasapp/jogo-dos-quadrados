@@ -71,7 +71,7 @@ main{
   align-items: center;
 }
 
-.roll div{
+.roll button{
   width: 170px;
   height: 170px;
   background-color: yellow;
@@ -79,10 +79,72 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  outline: none;
+  border: transparent;
 }
 
-.roll div p{
+.roll button p{
   font-size: 25px;
   font-weight: 600;
   text-align: center;
+}
+
+.modal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  align-content: center;
+  display: none;
+}
+
+.modal-content{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  border-radius: 2%;
+}
+
+.modal-content p{
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.modal-content span{
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.modal-content img{
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+}
+
+.modal-content button{
+  width: 170px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  border: transparent;
 }

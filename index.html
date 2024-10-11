@@ -8,17 +8,24 @@
 </head>
 <body>
   <main>
-    <section class="canvas">
+    <section class="canvas" id="canvas">
       <section class="yellow"></section>
       <section class="pink"></section>
       <section class="red"></section>
       <section class="green"></section>
     </section>
-    <section class="controls">
+    <section class="controls" id="controls">
       <div class="roll">
-        <div>
+        <button id="roll-dice">
           <p id="color-roll">Amarelo</p>
-        </div>
+        </button>
+      </div>
+    </section>
+    <section class="modal" id="modal">
+      <div class="modal-content" id="modal-content">
+        <p>Parabéns time <span id="winner-name"></span></p>
+        <img src="" alt="" id="winner-image">
+        <button id="play-again">Jogar novamente</button>
       </div>
     </section>
   </main>
