@@ -1,9 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-main{
+main {
   display: flex;
   flex-direction: row;
   width: 100vw;
@@ -11,7 +11,7 @@ main{
   overflow: hidden;
 }
 
-.canvas{
+.canvas {
   width: 75vw;
   height: 100vh;
   display: flex;
@@ -20,37 +20,43 @@ main{
   padding: 1%;
 }
 
-.yellow, .red, .pink, .green{
+.yellow,
+.red,
+.pink,
+.green {
   display: flex;
   flex-direction: row;
   height: 15vh;
   justify-content: space-evenly;
 }
 
-.yellow div, .red div, .pink div, .green div{
+.yellow div,
+.red div,
+.pink div,
+.green div {
   width: 100px;
   height: 100px;
   background-color: #a8a6a6;
   border-radius: 5%;
 }
 
-.yellow div:nth-child(1){
+.yellow div:nth-child(1) {
   background-color: yellow;
 }
 
-.pink div:nth-child(1){
+.pink div:nth-child(1) {
   background-color: pink;
 }
 
-.red div:nth-child(1){
+.red div:nth-child(1) {
   background-color: red;
 }
 
-.green div:nth-child(1){
+.green div:nth-child(1) {
   background-color: green;
 }
 
-.controls{
+.controls {
   width: 25vw;
   height: 100vh;
   display: flex;
@@ -59,7 +65,7 @@ main{
   align-items: center
 }
 
-.roll{
+.roll {
   width: 80%;
   height: 40%;
   border: 2px solid #a8a6a6;
@@ -71,7 +77,7 @@ main{
   align-items: center;
 }
 
-.roll button{
+.roll button {
   width: 170px;
   height: 170px;
   background-color: yellow;
@@ -84,13 +90,13 @@ main{
   border: transparent;
 }
 
-.roll button p{
+.roll button p {
   font-size: 25px;
   font-weight: 600;
   text-align: center;
 }
 
-.modal{
+.modal {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,7 +108,7 @@ main{
   display: none;
 }
 
-.modal-content{
+.modal-content {
   width: 50%;
   height: 50%;
   display: flex;
@@ -113,25 +119,25 @@ main{
   border-radius: 2%;
 }
 
-.modal-content p{
+.modal-content p {
   font-size: 25px;
   font-weight: 400;
   text-align: center;
   margin-bottom: 2%;
 }
 
-.modal-content span{
+.modal-content span {
   font-size: 35px;
   font-weight: 600;
 }
 
-.modal-content img{
+.modal-content img {
   width: 200px;
   height: 200px;
   border-radius: 5%;
 }
 
-.modal-content button{
+.modal-content button {
   width: 170px;
   height: 50px;
   background-color: white;
@@ -147,4 +153,57 @@ main{
   cursor: pointer;
   outline: none;
   border: transparent;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .canvas {
+    width: 100vw;
+    height: 70vh;
+    flex-direction: row;
+  }
+
+  .yellow,
+  .red,
+  .pink,
+  .green {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+  }
+
+  .controls {
+    width: 35vw;
+    height: 20vh;
+    margin-bottom: 3%;
+  }
+
+  .roll {
+    width: 100%;
+    height: 100%;
+  }
+
+  .roll button {
+    width: 70%;
+    height: 70%;
+  }
+
+  .roll button p {
+    font-size: 20px;
+  }
+
+  .modal-content {
+    width: 70%;
+    height: 50%;
+  }
+
+  .modal-content button {
+    margin-top: 5%;
+    width: 65%;
+    font-size: 20px;
+  }
 }
