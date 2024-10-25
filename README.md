@@ -26,4 +26,4 @@ Acesse <a href="https://joselucasapp.github.io/jogo-dos-quadrados/">aqui</a>.
 
 ## Contato
 
-Para perguntas ou feedback, entre em contato pelo [seu email] ou através do [seu perfil do GitHub].
+Para perguntas ou feedback, entre em contato pelo jlgf.profissional@gmail.com ou através do github @joselucasapp.
